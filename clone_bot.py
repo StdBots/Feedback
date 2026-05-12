@@ -16,7 +16,7 @@ from pyrogram.types import (
 )
 from pyrogram.errors import FloodWait, UserIsBlocked, InputUserDeactivated, PeerIdInvalid
 
-from configs import Config
+from config import Config
 from database.database import Database
 
 logger = logging.getLogger(__name__)
