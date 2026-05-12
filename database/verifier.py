@@ -1,6 +1,6 @@
 import datetime
 
-from configs import Config
+from config import Config
 from database.database import Database
 
 DB_URL = Config.DB_URL
