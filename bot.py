@@ -11,7 +11,7 @@ from pyrogram.types import (
     InlineKeyboardMarkup, InlineKeyboardButton, CallbackQuery, Message
 )
 
-from configs import Config as C
+from config import Config as C
 from database.broadcast import broadcast
 from database.verifier import handle_user_status
 from database.database import Database
