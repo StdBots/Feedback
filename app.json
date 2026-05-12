@@ -1,0 +1,65 @@
+{
+  "name": "Feedback Bot with Clone System",
+  "description": "A Telegram feedback bot with clone system - users can create their own clone bots",
+  "keywords": ["telegram", "bot", "feedback", "clone"],
+  "env": {
+    "API_ID": {
+      "description": "Your Telegram API ID from my.telegram.org",
+      "required": true
+    },
+    "API_HASH": {
+      "description": "Your Telegram API Hash from my.telegram.org",
+      "required": true
+    },
+    "BOT_TOKEN": {
+      "description": "Main bot token from @BotFather",
+      "required": true
+    },
+    "OWNER_ID": {
+      "description": "Your Telegram User ID (main sudo - has access to all clone bots too)",
+      "required": true
+    },
+    "DB_URL": {
+      "description": "MongoDB connection URL",
+      "required": true
+    },
+    "DB_NAME": {
+      "description": "MongoDB database name",
+      "value": "feedback_bot"
+    },
+    "LOG_CHANNEL": {
+      "description": "Telegram channel/group ID for logging new users",
+      "required": true
+    },
+    "AUTH_USERS": {
+      "description": "Space-separated list of additional sudo user IDs",
+      "required": false
+    },
+    "START_TEXT": {
+      "description": "Start message text",
+      "value": "I am a Feedback Bot! Send me a message and the owner will reply."
+    },
+    "HELP_TEXT": {
+      "description": "Help message text",
+      "value": "Send any message and the owner will receive it directly."
+    },
+    "SUPPORT_GROUP": {
+      "description": "Support group link",
+      "value": "https://t.me/HeimanSupport"
+    },
+    "UPDATE_CHANNEL": {
+      "description": "Updates channel link",
+      "value": "https://t.me/HeimanSupports"
+    },
+    "BROADCAST_AS_COPY": {
+      "description": "Set True to broadcast as copy (without forward tag)",
+      "value": "False"
+    }
+  },
+  "formation": {
+    "worker": {
+      "quantity": 1,
+      "size": "basic"
+    }
+  }
+}
