@@ -87,7 +87,7 @@ MongoDB mein teen tarah ke collections:
 
 ## 📦 Deploy on Heroku
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
+[![Deploy][(https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)](https://heroku.com/deploy?template=https://github.com/StdBots/Feedback)
 
 1. Heroku pe deploy karo
 2. Env vars set karo
